@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pamela Cardoso | Portfólio</title>
+  <meta name="description" content="Portfólio de UX/UI com projetos, estudos de caso e artigos." />
+  <script>
+    if (!window.location.hash) {
+      window.location.replace("sobre.html");
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body data-nav-sections="#projetos,#estudos-de-caso,#artigos">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" data-header>
+    <div class="container header__inner">
+      <a class="brand" href="#projetos" aria-label="Ir para projetos">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">Pamela Cardoso</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__link is-active" href="#projetos">Projetos</a>
+        <a class="nav__link" href="#estudos-de-caso">Estudo de Caso</a>
+        <a class="nav__link" href="#artigos">Artigos</a>
+        <a class="nav__link" href="sobre.html">Sobre</a>
+        <a class="nav__cta" href="#contato">Fale comigo</a>
+      </nav>
+
+      <button class="menu" type="button" aria-label="Abrir menu" aria-expanded="false" data-menu-btn>
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+        <span class="menu__bar"></span>
+      </button>
+    </div>
+
+    <div class="mobile" data-mobile>
+      <div class="container mobile__inner">
+        <a class="mobile__link" href="#projetos" data-mobile-link>Projetos</a>
+        <a class="mobile__link" href="#estudos-de-caso" data-mobile-link>Estudo de Caso</a>
+        <a class="mobile__link" href="#artigos" data-mobile-link>Artigos</a>
+        <a class="mobile__link" href="sobre.html" data-mobile-link>Sobre</a>
+        <a class="mobile__cta" href="#contato" data-mobile-link>Fale comigo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="projetos" class="section">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Projetos</h2>
+            <p class="section__subtitle">Projetos com foco em processo, decisões e entregas desenvolvidas.</p>
+          </div>
+        </div>
+
+        <div class="grid" id="projectsGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="estudos-de-caso" class="section section--cases">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Estudo de Caso</h2>
+            <p class="section__subtitle">Análises e investigações acadêmicas com foco em experiência, qualidade e usabilidade.</p>
+          </div>
+        </div>
+
+        <div class="grid" id="caseStudiesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="artigos" class="section section--articles">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <h2 class="section__title">Artigos</h2>
+            <p class="section__subtitle">Produções acadêmicas, estudos e publicações desenvolvidas.</p>
+          </div>
+        </div>
+
+        <div class="grid" id="articlesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <footer id="contato" class="footer footer--premium">
+      <div class="container">
+        <div class="footer-premium">
+          <div class="footer-premium__left">
+            <h2 class="footer-premium__title">Contatos</h2>
+            <p class="footer-premium__desc"></p>
+          </div>
+
+          <div class="footer-premium__right">
+            <a class="footer-contact" href="mailto:pamelacardoso658@gmail.com">
+              <div class="footer-contact__icon">✉</div>
+              <div class="footer-contact__content">
+                <span class="footer-contact__label">E-mail</span>
+                <strong class="footer-contact__value">pamelacardoso658@gmail.com</strong>
+              </div>
+            </a>
+
+            <a class="footer-contact" href="https://www.linkedin.com/in/pamelacardoso-" target="_blank" rel="noreferrer">
+              <div class="footer-contact__icon">in</div>
+              <div class="footer-contact__content">
+                <span class="footer-contact__label">LinkedIn</span>
+                <strong class="footer-contact__value">Pamela Cardoso</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-premium__bottom">
+          <p>© <span data-year></span> — Portfólio pessoal</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal__overlay" data-close></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__head">
+        <div>
+          <p class="modal__tag" id="modalTag"></p>
+          <h3 class="modal__title" id="modalTitle"></h3>
+        </div>
+
+        <button class="iconbtn" type="button" aria-label="Fechar" data-close>✕</button>
+      </div>
+
+      <div class="modal__body">
+        <div class="modal__text">
+          <p class="modal__desc" id="modalDesc"></p>
+          <ul class="modal__list" id="modalBullets"></ul>
+        </div>
+
+        <div class="modal__links" aria-label="Links do conteúdo">
+          <a class="btn btn--primary" id="modalPrimaryLink" href="#" target="_blank" rel="noreferrer">Abrir projeto</a>
+          <a class="btn btn--ghost" id="modalThirdLink" href="#" target="_blank" rel="noreferrer">Ver design (Figma)</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/site.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
