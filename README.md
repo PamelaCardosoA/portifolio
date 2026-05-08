@@ -5,7 +5,8 @@ Portfólio pessoal desenvolvido para apresentar projetos, artigos, experiências
 ## ✨ Sobre o Projeto
 
 O objetivo deste portfólio é reunir projetos acadêmicos, estudos, artigos e trabalhos desenvolvidos ao longo da trajetória profissional e universitária, criando uma apresentação visual moderna, organizada e responsiva.
-Link: https://portifolio-seven-xi-79.vercel.app/sobre.html
+
+ https://portifolio-seven-xi-79.vercel.app/sobre.html
 
 ## 🚀 Tecnologias Utilizadas
 
